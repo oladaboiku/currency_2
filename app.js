@@ -38,7 +38,7 @@ fetch('https://api.frankfurter.app/currencies')
         fetch(`https://${host}/latest?amount=${value}&from=${currency1}&to=${currency2}`)
           .then((val) => val.json())
           .then((val) => {
-            console.log(Object.values(val.rates)[0]);
+            // console.log(Object.values(val.rates)[0]);
             outputAmt.value = Object.values(val.rates)[0];
           });
   
